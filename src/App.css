@@ -1,0 +1,146 @@
+.App {
+  /* text-align: center; */
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.camp-caption{  
+  font-size: 22px;
+  top: 30%;
+  bottom: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+.caption-animation .item.active .camp-caption{
+
+  -webkit-animation-name: caption;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: backwards;
+  animation-name: caption;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes caption{
+  0%{
+    font-size: 16px;    
+  }
+  100%{
+    font-size: 22px;   
+    
+  }
+}
+
+.vid{
+  background-color: #F2F2F2;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.par{
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.facilities, .program, .location, .staff, .biaya, .kontak{
+  background-color: #F2F2F2;
+  
+  margin-bottom: 100px;
+  padding-top: 50px;
+}
+.biaya, .program{
+  height: 600px;
+  
+}
+
+.fas-logo{
+  font-size: 35px;
+}
+.listkegiatan{
+  margin-top: 50px;
+}
+.keg{
+  height: 230px;
+  text-align: center;
+}
+.coret{
+  text-decoration: line-through;
+}
+
+.comment-testi{
+  margin-top: 20px;
+}
+.img-testi{
+  height: 300px;
+  width: auto
+}
+.img-staff{
+  height: 300px;
+  width: auto;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width:1280px) { 
+  .btn-chat{
+    background-color: #61CE70;
+    width: 300px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    
+  }
+
+ }
+
+ @media only screen and (min-width:360px) { 
+  .btn-chat{
+    background-color: #00A859;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    
+  }
+
+ }
+
+
+
+body{
+  position: relative;
+  background-color: #F2F2F2;
+}
+
+.panel-lokasi{
+  height: 200px;
+}
+
