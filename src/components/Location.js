@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import lokasi1 from '../assets/lokasi/1.jpg';
-import lokasi2 from '../assets/lokasi/2.jpeg';
-import lokasi3 from '../assets/lokasi/3.jpg';
-import lokasi4 from '../assets/lokasi/4.jpg';
-import lokasi5 from '../assets/lokasi/5.jpg';
-import lokasi6 from '../assets/lokasi/6.jpeg';
-import lokasi7 from '../assets/lokasi/7.jpeg';
-import lokasi8 from '../assets/lokasi/8.jpeg';
+
 import {
     GoogleMap,
     Marker,
@@ -22,10 +15,10 @@ import {
 const Peta = withScriptjs(withGoogleMap((props) =>
   <GoogleMap
     defaultZoom={13}
-    defaultCenter={{ lat: -7.28659, lng: 112.760 }}
+    defaultCenter={{ lat: -7.288998, lng: 112.802923 }}
   >
     {
-        props.isMarkerShown && <Marker position={{lat: -7.28659, lng: 112.760}}>
+        props.isMarkerShown && <Marker position={{lat: -7.288998, lng: 112.802923}}>
             <InfoWindow>
                 <div>
                     Sang Juara School
@@ -35,7 +28,7 @@ const Peta = withScriptjs(withGoogleMap((props) =>
 
 
     }{
-        props.isMarkerShown && <Marker position={{lat:-7.2728118, lng: 112.781}}>
+        props.isMarkerShown && <Marker position={{lat:-7.272788, lng: 112.783306}}>
             <InfoWindow>
                 <div>
                 Anjani BNB Surabaya
@@ -56,14 +49,14 @@ class Location extends Component{
                     <div className="row" style={{marginTop:"50px",marginBottom:"100px"}}>
                         <div className="col-md-8 " align="center">                             
                             <ul className="list-inline">
-                                <li><img src={lokasi1} alt="" className="img-responsive"/></li>
-                                <li><img src={lokasi2} alt="" className="img-responsive"/></li>
-                                <li><img src={lokasi3} alt="" className="img-responsive"/></li>
-                                <li><img src={lokasi4} alt="" className="img-responsive"/></li>
-                                <li><img src={lokasi5} alt="" className="img-responsive"/></li>
-                                <li><img src={lokasi6} alt="" className="img-responsive"/></li>
-                                <li><img src={lokasi7} alt="" className="img-responsive"/></li>
-                                <li><img src={lokasi8} alt="" className="img-responsive"/></li>
+                                <li><img src="/assets/lokasi/1.jpg" alt="" className="img-responsive"/></li>
+                                <li><img src="/assets/lokasi/2.jpeg" alt="" className="img-responsive"/></li>
+                                <li><img src="/assets/lokasi/3.jpg" alt="" className="img-responsive"/></li>
+                                <li><img src="/assets/lokasi/4.jpg" alt="" className="img-responsive"/></li>
+                                <li><img src="/assets/lokasi/5.jpg" alt="" className="img-responsive"/></li>
+                                <li><img src="/assets/lokasi/6.jpeg" alt="" className="img-responsive"/></li>
+                                <li><img src="/assets/lokasi/7.jpeg" alt="" className="img-responsive"/></li>
+                                <li><img src="/assets/lokasi/8.jpeg" alt="" className="img-responsive"/></li>
                             </ul>
                         </div>
                         <div className="col-md-4">
@@ -73,7 +66,7 @@ class Location extends Component{
                             <label htmlFor=""><h4>Waktu:</h4></label>
                             <p>April-Mei 2018 (Menyesuaikan jadwal pemerintah untuk UN 2018)</p>
                             <label htmlFor=""><h4>Peserta:</h4></label>
-                            <p>Kelas 2 SMA atau sederajat dan alumni 2016 - 2017 yang mengikuti SBMPTN</p>
+                            <p>Kelas 3 SMA atau sederajat dan alumni 2016 - 2017 yang mengikuti SBMPTN</p>
                             <label htmlFor=""><h4>Fasilitas Kamar:</h4></label>                        
                             <ul className="list">                                    
                                 <li>  Tempat tidur springbed</li>

@@ -1,14 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import gal1 from '../assets/gallery/galeri1.JPG';
-import gal2 from '../assets/gallery/galeri2.JPG';
-import gal3 from '../assets/gallery/galeri3.JPG';
-import gal4 from '../assets/gallery/galeri4.JPG';
-import gal5 from '../assets/gallery/galeri5.JPG';
-import gal6 from '../assets/gallery/galeri6.JPG';
-import gal7 from '../assets/gallery/galeri7.JPG';
-import gal8 from '../assets/gallery/galeri8.JPG';
-
 
 
 const Gallery = () => (
@@ -17,14 +8,14 @@ const Gallery = () => (
         <h3 align="center">Gallery</h3>
         <br/><br/>
         <div className="row">
-            <div className="col-md-3"><img src={gal1} alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
-            <div className="col-md-3"><img src={gal2} alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
-            <div className="col-md-3"><img src={gal3} alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
-            <div className="col-md-3"><img src={gal4} alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
-            <div className="col-md-3"><img src={gal5} alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
-            <div className="col-md-3"><img src={gal6} alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
-            <div className="col-md-3"><img src={gal7} alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
-            <div className="col-md-3"><img src={gal8} alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>       
+            <div className="col-md-3"><img src="/assets/gallery/galeri1.JPG" alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
+            <div className="col-md-3"><img src="/assets/gallery/galeri2.JPG" alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
+            <div className="col-md-3"><img src="/assets/gallery/galeri3.JPG" alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
+            <div className="col-md-3"><img src="/assets/gallery/galeri4.JPG" alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
+            <div className="col-md-3"><img src="/assets/gallery/galeri5.JPG" alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
+            <div className="col-md-3"><img src="/assets/gallery/galeri6.JPG" alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
+            <div className="col-md-3"><img src="/assets/gallery/galeri7.JPG" alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>
+            <div className="col-md-3"><img src="/assets/gallery/galeri8.JPG" alt="" className="img-responsive" style={{marginBottom:"30px"}}/></div>       
             
         </div>      
     </div>

@@ -5,11 +5,10 @@ import {Route,Link,BrowserRouter as Router} from 'react-router-dom';
 class Program extends Component{
     render(){
         return(
-            <Router>  
-              
+            <Router>                
             <div className="program">
             <div className="container-fluid">
-              <h3 align="center">Program</h3>
+              <h3 align="center">Program Kami Lainnya</h3>
               <div className="container">
                 <div className="row" align="center">
                   <div className="col-xs-4">

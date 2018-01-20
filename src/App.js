@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 // import {Route,Link,BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
-import logo from './assets/logo.png';
+// import logo from './assets/logo.png';
 // import Lokasi from './components/Location';
 import Home from './components/Home';
 // import Program from './components/Program';
@@ -34,7 +34,7 @@ class App extends Component {
       <nav className="navbar navbar-inverse hidden-xs hidden-sm navbar-fixed-top">
         <div className="container-fluid">
           <div className="navbar-header">
-            <a to="/" className="navbar-brand"><img src={logo} alt="logo"  height="22px"/></a>
+            <a to="/" className="navbar-brand"><img src="/assets/logo.png" alt="logo"  height="22px"/></a>
           </div>          
 
             <Scrollspy 

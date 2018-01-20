@@ -14,7 +14,7 @@ class Price extends Component{
                         <div className="panel panel-primary panel-harga" >
                         <div className="panel-heading"><label htmlFor="">Untuk 5 Pendaftar Pertama</label></div>
                         <div className="panel-body">
-                            <h4 className="coret">Rp 19.000.000</h4>
+                            <h4 className="coret">Rp 19.898.000</h4>
                             <h2>RP. 16.898.000</h2>                        
                         </div>
                         <div className="panel-footer">
