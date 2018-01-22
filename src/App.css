@@ -73,23 +73,13 @@
 }
 
  .location, .staff, .biaya{
-  /* background-color: #F2F2F2; */
-  background-color: #81D4FA;
   
-  margin-bottom: 100px;
-  padding-top: 50px;
-  /* height: 1280px; */
+  background-color: #81D4FA; 
+  padding-bottom: 220px;
+  padding-top: 50px;  
 }
 
 
-.facilities, .kontak, .program, .home{
-
-  padding-top: 50px;
-  
-}
-.kontak{
-  /* height: 1000px; */
-}
 
 .fas-logo{
   font-size: 35px;
@@ -112,6 +102,8 @@
   margin-top: 50px;
 }
 
+/* Responsive CSS */
+
 @media only screen and (min-width:1280px) { 
   .btn-chat{
     background-color: #61CE70;
@@ -119,7 +111,19 @@
     text-decoration: none;
     color: white;
     border-radius: 5px;
+  }
+
+  .btn-program{
+    width: 300px;
+  }
+
+  .facilities, .kontak, .program{
+
+    padding-top: 50px;
     
+  }
+  .kontak, .program{
+    height: 1000px;
   }
 
  }
@@ -146,6 +150,10 @@ body{
 
 .panel-lokasi{
   height: 250px;
+}
+.panel-harga{
+  height: 370px;
+  padding-top: 140px;
 }
 
 /* Testimonial */

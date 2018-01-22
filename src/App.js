@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import {Route,Link,BrowserRouter as Router} from 'react-router-dom';
+import Scrollspy from 'react-scrollspy';
 import './App.css';
-// import logo from './assets/logo.png';
-// import Lokasi from './components/Location';
 import Home from './components/Home';
-// import Program from './components/Program';
-// import Fasilitas from './components/Facility';
-// import Biaya from './components/Price';
 import Program from './components/Program';
 import Lokasi from './components/Location';
 import Fasilitas from './components/Facility';
 import Biaya from './components/Price';
 import Kontak from './components/Kontak';
-import Scrollspy from 'react-scrollspy';
+import Apakata from './components/Apakata';
+import Staff from './components/Staff';
+import Whyme from './components/Whyme';
+import Alumni from './components/Alumni';
+import Gallery from './components/Gallery';
+import Map from './components/Map';
 
 
 class App extends Component {
@@ -42,10 +41,10 @@ class App extends Component {
               offset={50}
               >
               <li><a href="#home"><i className="ion-ios-home"></i> Beranda</a></li>
-              <li><a href="#program"><i className="ion-code-working"></i> Program</a></li>
-              <li><a href="#lokasi"><i className="ion-ios-location"></i> Lokasi</a></li>
               <li><a href="#fasilitas"><i className="ion-document-text"></i> Fasilitas</a></li>
+              <li><a href="#lokasi"><i className="ion-ios-location"></i> Lokasi</a></li>
               <li><a href="#biaya"><i className="ion-pricetags"></i> Biaya</a></li>
+              <li><a href="#program"><i className="ion-code-working"></i> Program</a></li>
               <li><a href="#kontak"><i className="ion-iphone"></i> Kontak</a></li>
             </Scrollspy>
         </div>
@@ -64,10 +63,10 @@ class App extends Component {
 
             <Scrollspy items={['biaya','program','lokasi','fasilitas','home','kontak']} className="nav navbar-nav navbar-right">
               <li><a href="#home" className="col-xs-2"><i className="ion-ios-home"></i></a></li>
-              <li><a href="#program" className="col-xs-2"><i className="ion-code-working"></i></a></li>
-              <li><a href="#lokasi" className="col-xs-2"><i className="ion-ios-location"></i></a></li>
               <li><a href="#fasilitas" className="col-xs-2"><i className="ion-document-text"></i></a></li>
+              <li><a href="#lokasi" className="col-xs-2"><i className="ion-ios-location"></i></a></li>
               <li><a href="#biaya" className="col-xs-2"><i className="ion-pricetags"></i></a></li>
+              <li><a href="#program" className="col-xs-2"><i className="ion-code-working"></i></a></li>
               <li><a href="#kontak" className="col-xs-2"><i className="ion-iphone"></i></a></li>
             </Scrollspy>
 
@@ -80,18 +79,35 @@ class App extends Component {
       <section id="home">
         <Home></Home>
       </section>
-      <section id="program">
-        <Program></Program>
-      </section>
-      <section id="lokasi">
-      <Lokasi></Lokasi>
-      </section>
+
+        <Alumni></Alumni>
+
       <section id="fasilitas">
-      <Fasilitas></Fasilitas>
+        <Fasilitas></Fasilitas>
       </section>
+
+        <Whyme></Whyme>
+      
+      <section id="lokasi">
+        <Lokasi></Lokasi>
+      </section>
+
+      <Apakata></Apakata>
+      <Staff></Staff>
+
       <section id="biaya">
         <Biaya></Biaya>
       </section>
+      
+        <Gallery></Gallery>
+
+      <section id="program">
+        <Program></Program>
+      </section>
+
+
+        <Map></Map>
+
       <section id="kontak">
         <Kontak></Kontak>
       </section>

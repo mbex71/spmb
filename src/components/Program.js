@@ -1,47 +1,82 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {Route,Link,BrowserRouter as Router} from 'react-router-dom';
 
 class Program extends Component{
+  constructor(props){
+    super(props);
+
+    this.state = {
+      privateState: true,
+      umfkState: false
+      
+    }
+    
+    this.masukkuliah = this.masukkuliah.bind(this);
+    this.privateHandle = this.privateHandle.bind(this);
+    this.umfkHandle = this.umfkHandle.bind(this);
+  }
+
+  privateHandle(e){
+    e.preventDefault();
+    this.setState({
+      privateState:true,
+      umfkState:false
+
+    });
+  }
+
+  umfkHandle(e){
+    e.preventDefault();
+    this.setState({
+      umfkState:true,
+      privateState:false
+    });
+  }
+
+  masukkuliah(e){    
+    e.preventDefault();
+    window.open("http://masukkuliah.com","__blank");
+  }
+
     render(){
         return(
-            <Router>                
+                       
             <div className="program">
             <div className="container-fluid">
               <h3 align="center">Program Kami Lainnya</h3>
+              <br/><br/>
               <div className="container">
                 <div className="row" align="center">
                   <div className="col-xs-4">
-                    <Link to="/program/private">
+                    <a href="/" onClick={this.privateHandle} className="btn-program btn-xs">
                     <h1><i className="ion-university"></i></h1>
                     <label htmlFor="">Private SBMPTN</label>
-                    </Link>
+                    </a>
                   </div>
                   <div className="col-xs-4">
-                    <Link to='/program/umfk'>
+                    <a href="/" onClick={this.umfkHandle} className="btn-program btn-xs">
                     <h1><i className="ion-ios-medkit-outline"></i></h1>
                     <label htmlFor="">UMFK</label>
-                    </Link>
+                    </a>
                   </div>
                   <div className="col-xs-4">
-                    <Link to="http://masukkuliah.com" target="__blank">
+                    <a href="/" onClick={this.masukkuliah} className="btn-program btn-xs">
                     <h1><i className="ion-paper-airplane"></i></h1>
                     <label htmlFor="">masukkuliah.com</label>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
               <br/><br/>          
-            
-              <Route exact path="/program" render={()=>(
-                <p></p>
-              )}></Route>
-              <Route path="/program/private" component={Private} />
-              <Route path="/program/umfk" component={Umfk} />
+              
+              
+              {this.state.privateState ? <Private /> : null}
+              {this.state.umfkState ? <Umfk /> : null}
+              
           
             </div>
             </div>
-            </Router>
+            
 
         );
        
@@ -66,8 +101,8 @@ const Private = () => (
 
   )
   
-const Umfk = () => (
-    <div className="container" align="center" style={{marginBottom:"100px",marginTop:"50px"}}>      
+const Umfk = (props) => (
+    <div className="container" align="center" style={{marginBottom:"100px",marginTop:"50px"}} hidden={props.status}>      
         <h3><label htmlFor="umfk">Ujian Masuk Fakultas Kedokteran</label></h3> 
             <h5>Bagi yang ingin belajar persiapan UMFK di rumah</h5>
             <ul className="nav">

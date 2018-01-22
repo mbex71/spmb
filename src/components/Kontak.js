@@ -8,7 +8,7 @@ class Kontak extends Component{
             <div className="kontak">
             <div className="container-fluid" align="center">                
                 <h3>Kontak</h3>
-                <br/>
+                <br/><br/>
                 <div className="row">
                     <div className="col-md-3">
                         <div className="panel panel-info panel-lokasi">

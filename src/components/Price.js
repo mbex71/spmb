@@ -8,12 +8,14 @@ class Price extends Component{
             <div className="biaya">
             <div className="container" align="center">                
                 <h3>Biaya</h3>
-                <br/>
+                <br/><br/>
                 <div className="row">
                     <div className="col-md-6 col-md-offset-3">
-                        <div className="panel panel-primary panel-harga" >
-                        <div className="panel-heading"><label htmlFor="">Untuk 5 Pendaftar Pertama</label></div>
-                        <div className="panel-body">
+                        <div className="panel panel-primary ">
+                        <div className="panel-heading">
+                            <label htmlFor=""><h3>Untuk 5 Pendaftar Pertama</h3></label>
+                        </div>
+                        <div className="panel-body panel-harga">
                             <h4 className="coret">Rp 19.898.000</h4>
                             <h2>RP. 16.898.000</h2>                        
                         </div>

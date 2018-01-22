@@ -1,44 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import {
-    GoogleMap,
-    Marker,
-    withGoogleMap,
-    withScriptjs,
-    InfoWindow
-} from 'react-google-maps';
-
-
-
-
-const Peta = withScriptjs(withGoogleMap((props) =>
-  <GoogleMap
-    defaultZoom={13}
-    defaultCenter={{ lat: -7.288998, lng: 112.802923 }}
-  >
-    {
-        props.isMarkerShown && <Marker position={{lat: -7.288998, lng: 112.802923}}>
-            <InfoWindow>
-                <div>
-                    Sang Juara School
-                </div>
-            </InfoWindow>
-        </Marker>
-
-
-    }{
-        props.isMarkerShown && <Marker position={{lat:-7.272788, lng: 112.783306}}>
-            <InfoWindow>
-                <div>
-                Anjani BNB Surabaya
-                </div>                
-            </InfoWindow>
-        </Marker> 
-    }
-
-  </GoogleMap>
-))
 
 class Location extends Component{
     render(){
@@ -78,16 +40,7 @@ class Location extends Component{
                     </div>
                     
                 </div>
-                <div className="container" style={{marginBottom:"100px"}}>
-                <h3 align="center">Peta</h3>
-                    <Peta
-                        isMarkerShown
-                        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBap3OXENY3BB0DjsLz3ycx_sgLCiM_yZw&v=3.exp&libraries=geometry,drawing,places"
-                        loadingElement={<div style={{ height: `100%` }} />}
-                        containerElement={<div style={{ height: `400px` }} />}
-                        mapElement={<div style={{ height: `100%` }} />}
-                    ></Peta>
-                </div>
+
             </div>
         );
     }
