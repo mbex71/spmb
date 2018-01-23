@@ -13,6 +13,7 @@ import Whyme from './components/Whyme';
 import Alumni from './components/Alumni';
 import Gallery from './components/Gallery';
 import Map from './components/Map';
+import Kenalan from './components/Kenalan';
 
 
 class App extends Component {
@@ -29,7 +30,9 @@ class App extends Component {
   render() {
     return (
       
-      <div className="App">
+      <div className="App"> 
+      <section id="home">       
+
       <nav className="navbar navbar-inverse hidden-xs hidden-sm navbar-fixed-top">
         <div className="container-fluid">
           <div className="navbar-header">
@@ -41,15 +44,21 @@ class App extends Component {
               offset={50}
               >
               <li><a href="#home"><i className="ion-ios-home"></i> Beranda</a></li>
+              <li><a href="#program"><i className="ion-code-working"></i> Program</a></li>
               <li><a href="#fasilitas"><i className="ion-document-text"></i> Fasilitas</a></li>
               <li><a href="#lokasi"><i className="ion-ios-location"></i> Lokasi</a></li>
-              <li><a href="#biaya"><i className="ion-pricetags"></i> Biaya</a></li>
-              <li><a href="#program"><i className="ion-code-working"></i> Program</a></li>
+              <li><a href="#biaya"><i className="ion-pricetags"></i> Biaya</a></li>              
               <li><a href="#kontak"><i className="ion-iphone"></i> Kontak</a></li>
             </Scrollspy>
         </div>
       </nav>
+      
+        <div className="container  visible-sm visible-xs logo-xs" align="center">
 
+          <img src="/assets/logo.png" align="center" height="50px;" alt="logo"/> 
+          
+        </div>
+      
       <nav className="navbar navbar-default navbar-fixed-bottom">
         <div className="container" align="center">
           <ul className="nav" >
@@ -63,23 +72,26 @@ class App extends Component {
 
             <Scrollspy items={['biaya','program','lokasi','fasilitas','home','kontak']} className="nav navbar-nav navbar-right">
               <li><a href="#home" className="col-xs-2"><i className="ion-ios-home"></i></a></li>
+              <li><a href="#program" className="col-xs-2"><i className="ion-code-working"></i></a></li>
               <li><a href="#fasilitas" className="col-xs-2"><i className="ion-document-text"></i></a></li>
               <li><a href="#lokasi" className="col-xs-2"><i className="ion-ios-location"></i></a></li>
-              <li><a href="#biaya" className="col-xs-2"><i className="ion-pricetags"></i></a></li>
-              <li><a href="#program" className="col-xs-2"><i className="ion-code-working"></i></a></li>
+              <li><a href="#biaya" className="col-xs-2"><i className="ion-pricetags"></i></a></li>              
               <li><a href="#kontak" className="col-xs-2"><i className="ion-iphone"></i></a></li>
             </Scrollspy>
 
          </div>
       </nav>      
+     
       <div className="hidden-xs" style={{marginTop:"50px"}}>      
       </div>
-
+      </section> 
     
-      <section id="home">
-        <Home></Home>
+   
+      <Home></Home>
+      <section id="program">
+        <Kenalan></Kenalan>  
       </section>
-
+        
         <Alumni></Alumni>
 
       <section id="fasilitas">
@@ -101,9 +113,9 @@ class App extends Component {
       
         <Gallery></Gallery>
 
-      <section id="program">
+      
         <Program></Program>
-      </section>
+      
 
 
         <Map></Map>

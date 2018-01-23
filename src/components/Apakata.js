@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 class Apakata extends Component{
     render(){
         return(
+            <div className="apakata">
             <div className="container">
             <h3 align="center">Apa Kata Mereka??</h3>
             <br/><br/>
@@ -76,10 +77,9 @@ class Apakata extends Component{
                     </label>
                     </p>
     
-                </div>
-    
-            </div>
-    
+                </div>    
+            </div>    
+        </div>
         </div>
         );
     }

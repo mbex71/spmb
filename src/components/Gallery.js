@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 class Gallery extends Component{
     render(){
         return(
-            <div className="container-fluid">    
+            <div className="container-fluid galery">    
             <h3 align="center">Gallery</h3>
             <br/><br/>
                 <div className="row">

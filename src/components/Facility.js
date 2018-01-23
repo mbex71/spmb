@@ -25,7 +25,7 @@ class Facility extends Component{
                         <div className="col-md-4 keg">
                         <i className="ion-android-star-outline fas-logo"></i>
                         <h4><label htmlFor="">Exclusive</label></h4>          
-                        <p>Maksimal 8-9 Siswa</p>
+                        <p>Maksimal 8-9 Siswa/Kelas</p>
                         </div>
                         <div className="col-md-4 keg">
                         <i className="ion-search fas-logo"></i>

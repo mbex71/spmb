@@ -86,8 +86,8 @@ class Program extends Component{
 const Private = () => (    
     <div className="container" align="center" style={{marginBottom:"100px",marginTop:"50px"}}>  
 
-          <h3><label htmlFor="private">Private Seleksi Bersama Masuk Perguruan Tinggi Negeri</label></h3> 
-          <h5>Bagi yang ingin belajar persiapan SBMPTN di rumah</h5>
+          <h4><label htmlFor="private">Private Seleksi Bersama Masuk Perguruan Tinggi Negeri</label></h4> 
+          <i>"Bagi yang ingin belajar persiapan SBMPTN di rumah"</i>
         
           <ul className="nav">
             <li><h4><label htmlFor="harga">Rp 1.200.000</label></h4></li>
@@ -103,8 +103,8 @@ const Private = () => (
   
 const Umfk = (props) => (
     <div className="container" align="center" style={{marginBottom:"100px",marginTop:"50px"}} hidden={props.status}>      
-        <h3><label htmlFor="umfk">Ujian Masuk Fakultas Kedokteran</label></h3> 
-            <h5>Bagi yang ingin belajar persiapan UMFK di rumah</h5>
+        <h4><label htmlFor="umfk">Ujian Masuk Fakultas Kedokteran</label></h4> 
+            <i>"Bagi yang ingin belajar persiapan UMFK di rumah"</i>
             <ul className="nav">
                 <li><h4><label htmlFor="harga">Rp 1.400.000</label></h4></li>
                 <li>1 Kelas (1-2 Orang)</li>

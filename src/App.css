@@ -28,14 +28,7 @@
   to { transform: rotate(360deg); }
 }
 
-.camp-caption{  
-  font-size: 22px;
-  opacity: 0;
-  top: 50%;
-  bottom: auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
-}
+
 
 .caption-animation .item.active .camp-caption{
 
@@ -61,7 +54,7 @@
 
 .vid{
   background-color: #F2F2F2;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
@@ -72,13 +65,22 @@
   margin-bottom: 20px;
 }
 
- .location, .staff, .biaya{
+ .location, .staff, .facilities,.galery, .map, .vid {
   
   background-color: #81D4FA; 
-  padding-bottom: 220px;
+  padding-bottom: 100px;
   padding-top: 50px;  
 }
 
+.kontak, .program, .apakata, .whyme, .biaya{
+
+  padding-top: 50px;
+  padding-bottom: 100px;  
+  
+}
+.kontak, .program{
+  height: 700px;
+}
 
 
 .fas-logo{
@@ -117,14 +119,19 @@
     width: 300px;
   }
 
-  .facilities, .kontak, .program{
 
-    padding-top: 50px;
+
+  .camp-caption{  
+    font-size: 28px;
+    opacity: 0;
+    top: 20%;
+    bottom: auto;
+    font-weight: 900;
+    
+    
     
   }
-  .kontak, .program{
-    height: 1000px;
-  }
+  
 
  }
 
@@ -137,9 +144,11 @@
     
   }
 
+  .home{
+    margin-bottom: 200px;
+  }
+
  }
-
-
 
 body{
   position: relative;
@@ -152,20 +161,21 @@ body{
   height: 250px;
 }
 .panel-harga{
-  height: 370px;
-  padding-top: 140px;
+  height: 200px;
+  padding-top: 50px;
 }
 
 /* Testimonial */
 .col-testi{
 
-height: 570px;
+height: 500px;
 /* margin-top: 20px;
 margin-bottom: 20px;  */
 
-/* border-style: solid;
-border-width: 5px; */  
+/* border-style: solid; */
+/* border-width: 5px;  */
 }
+
 
 .comment-testi{
   font-size: 12px;
@@ -192,4 +202,9 @@ width: auto;
   height: 350px;
   padding-top: 30px;
   padding-bottom:30px;
+}
+
+.logo-xs{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }

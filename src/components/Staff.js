@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 class Staff extends Component{
     render(){
         return(
-            <div className="container-fluid staff" style={{marginTop:"150px"}}>
+            <div className="container-fluid staff">
             <h3 align="center">Staff Pengajar</h3>
             <br/><br/>
             <div className="row">
@@ -58,7 +58,7 @@ class Staff extends Component{
                 </div>
     
                 <div className="col-md-3" align="center">                
-                    <img src="/assets/pengajar/pengajar7.jpg" alt="" className="img-responsive img-staff"/>                                
+                    <img src="/assets/pengajar/Pengajar7.jpg" alt="" className="img-responsive img-staff"/>                                
                     <label htmlFor="">
                         Agustin Leny Putri S.Si
                     </label>
@@ -66,7 +66,7 @@ class Staff extends Component{
                 </div>
     
                 <div className="col-md-3" align="center">                
-                    <img src="/assets/pengajar/pengajar8.jpg" alt="" className="img-responsive img-staff"/>                                
+                    <img src="/assets/pengajar/Pengajar8.jpg" alt="" className="img-responsive img-staff"/>                                
                     <label htmlFor="">
                         Rohim Aminullah Firdaus S.Pd M.Si
                     </label>

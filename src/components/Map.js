@@ -40,7 +40,7 @@ class Map extends Component{
 
     render(){
         return(
-            <div className="container-fluid">
+            <div className="container-fluid map">
                 <Peta
                 isMarkerShown
                 googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBap3OXENY3BB0DjsLz3ycx_sgLCiM_yZw&v=3.exp&libraries=geometry,drawing,places"
