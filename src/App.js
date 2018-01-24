@@ -14,6 +14,7 @@ import Alumni from './components/Alumni';
 import Gallery from './components/Gallery';
 import Map from './components/Map';
 import Kenalan from './components/Kenalan';
+import Joingroup from './components/Joingroup';
 
 
 class App extends Component {
@@ -110,6 +111,7 @@ class App extends Component {
       <section id="biaya">
         <Biaya></Biaya>
       </section>
+      <Joingroup></Joingroup>
       
         <Gallery></Gallery>
 

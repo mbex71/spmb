@@ -65,7 +65,13 @@
   margin-bottom: 20px;
 }
 
- .location, .staff, .facilities,.galery, .map, .vid {
+.join{
+  background-color:#1EBEA5; 
+  padding-bottom: 100px;
+  padding-top: 50px;  
+}
+
+ .location, .staff, .facilities,.galery, .map, .vid{
   
   background-color: #81D4FA; 
   padding-bottom: 100px;

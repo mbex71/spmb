@@ -28,7 +28,7 @@ class Whyme extends Component{
                         </div>
                         <div className="col-md-4 keg">
                         <i className="ion-search fas-logo"></i>
-                        <h4><label htmlFor="">JAMINAN LULUS SBMPTN 2017 ITS</label></h4>          
+                        <h4><label htmlFor="">GARANSI UANG KEMBALI</label></h4>          
                         <p>Jika tidak lulus Sbmptn atau Ujian Mandiri ITS 2018 kamu akan mendapatkan cashback.</p>
                         </div>
                         <div className="col-md-4 keg">
