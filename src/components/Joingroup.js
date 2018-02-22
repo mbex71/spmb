@@ -11,7 +11,7 @@ class Joingroup extends Component{
 
     handleJoin(e){
         e.preventDefault();
-        window.open("http://bit.ly/juarasbmptn","__blank");
+        window.open("http://bit.ly/juarasbmptn8","__blank");
     }
     render(){
         return(

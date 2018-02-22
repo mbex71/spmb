@@ -7,35 +7,43 @@ class Program extends Component{
 
     this.state = {
       privateState: true,
-      umfkState: false
+      gold: false,
+      reguler: false
+
       
     }
     
-    this.masukkuliah = this.masukkuliah.bind(this);
+    this.regulerHandle = this.regulerHandle.bind(this);
     this.privateHandle = this.privateHandle.bind(this);
-    this.umfkHandle = this.umfkHandle.bind(this);
+    this.goldHandle = this.goldHandle.bind(this);
   }
 
   privateHandle(e){
     e.preventDefault();
     this.setState({
       privateState:true,
-      umfkState:false
+      gold:false,
+      reguler:false
 
     });
   }
 
-  umfkHandle(e){
+  goldHandle(e){
     e.preventDefault();
     this.setState({
-      umfkState:true,
-      privateState:false
+      gold:true,
+      privateState:false,
+      reguler:false
     });
   }
 
-  masukkuliah(e){    
+  regulerHandle(e){    
     e.preventDefault();
-    window.open("http://masukkuliah.com","__blank");
+    this.setState({
+      gold:false,
+      privateState:false,
+      reguler:true
+    });
   }
 
     render(){
@@ -54,15 +62,15 @@ class Program extends Component{
                     </a>
                   </div>
                   <div className="col-xs-4">
-                    <a href="/" onClick={this.umfkHandle} className="btn-program btn-xs">
-                    <h1><i className="ion-ios-medkit-outline"></i></h1>
-                    <label htmlFor="">UMFK</label>
+                    <a href="/" onClick={this.goldHandle} className="btn-program btn-xs">
+                    <h1><i className="ion-ios-bookmarks-outline"></i></h1>
+                    <label htmlFor="">GOLD SBMPTN</label>
                     </a>
                   </div>
                   <div className="col-xs-4">
-                    <a href="/" onClick={this.masukkuliah} className="btn-program btn-xs">
+                    <a href="/" onClick={this.regulerHandle} className="btn-program btn-xs">
                     <h1><i className="ion-paper-airplane"></i></h1>
-                    <label htmlFor="">masukkuliah.com</label>
+                    <label htmlFor="">REGULER SBMPTN</label>
                     </a>
                   </div>
                 </div>
@@ -71,7 +79,8 @@ class Program extends Component{
               
               
               {this.state.privateState ? <Private /> : null}
-              {this.state.umfkState ? <Umfk /> : null}
+              {this.state.gold ? <Gold /> : null}
+              {this.state.reguler ? <Reguler /> : null}
               
           
             </div>
@@ -101,17 +110,56 @@ const Private = () => (
 
   )
   
-const Umfk = (props) => (
+const Gold = (props) => (
     <div className="container" align="center" style={{marginBottom:"100px",marginTop:"50px"}} hidden={props.status}>      
-        <h4><label htmlFor="umfk">Ujian Masuk Fakultas Kedokteran</label></h4> 
-            <i>"Bagi yang ingin belajar persiapan UMFK di rumah"</i>
+        <h4><label htmlFor="umfk">GOLD SBMPTN</label></h4> 
+            <i>"Mengikuti program dan kelas yang sama dengan program Juara SBMPTN Camp, namun tidak menginap. Sehingga tidak mendapatkan fasilitas penginapan, makan, laundry, antar jemput saat tes serta tidak mendapatkan garansi uang kembali jika tidak lolos SBMPTN atau Ujian Mandiri ITS 2018."</i>
             <ul className="nav">
-                <li><h4><label htmlFor="harga">Rp 1.400.000</label></h4></li>
-                <li>1 Kelas (1-2 Orang)</li>
-                <li>1 Minggu 2x Pertemuan</li>
-                <li>8x Pertemuan</li>
-                <li>Waktu menyesuaikan jadwal peserta dan tutor</li>
+                <li><h4><label htmlFor="harga">Rp 10.389.000</label></h4></li>
+                <li>Daftar selama Februari cukup bayar Rp 9.389.000*</li>
+                <li>Daftar 4 Gratis 1*</li>
+                <li>Diskon Rp 300.000 untuk ranking 10 besar di kelas* 
+                    (promo pilih salah satu)
+                </li>
+                
             </ul>
+        
+    </div>
+
+  )
+
+  const Reguler = (props) => (
+    <div className="container" align="center" style={{marginBottom:"100px",marginTop:"50px"}} hidden={props.status}>      
+        <h4><label htmlFor="umfk">REGULER SBMPTN</label></h4> 
+        <ul className="nav">
+                <li><h4><label htmlFor="harga">Rp.1.989.000</label></h4></li>
+                <li>DISKON Rp 200.000 untuk pendaftaran selama Februari*</li>
+                <li>Daftar 3 GRATIS 1*</li>
+                <li>Diskon Rp 150.000 untuk ranking 5 besar di kelas* 
+                    (promo pilih salah satu)
+                </li>                
+            </ul>
+            <br />
+          <div className="row">
+            <div className="col-md-6">
+              <label>Belajar SBMPTN Intensif</label>
+              <ul className="nav">
+                <li>Waktu 16 April - 5 Mei 2018 (senin-sabtu)</li>
+                <li>1 hari 2 sesi @1.5 jam</li>
+                <li>Try Out setiap akhir pekan</li>
+                <li>Khusus Peserta SBMPTN Saintek</li>
+              </ul>
+            </div>
+            <div className="col-md-6">
+              <label>Fasilitas</label>
+              <ul className="nav">
+                <li>Tentor BERKUALITAS dari ITS,Unair,Unesa</li>
+                <li>Kelas AC di kantor Sang Juara School</li>
+                <li>1 kelas 10-12 siswa</li>
+              </ul>
+            </div>
+          </div> 
+          
         
     </div>
 

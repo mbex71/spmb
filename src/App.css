@@ -84,9 +84,17 @@
   padding-bottom: 100px;  
   
 }
-.kontak, .program{
+.kontak, .program, .blog{
   height: 700px;
 }
+
+.artikel{
+  padding-bottom: 70px;
+}
+.artikellist{
+  margin-bottom: 30px;
+}
+
 
 
 .fas-logo{
