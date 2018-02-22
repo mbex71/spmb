@@ -162,7 +162,8 @@ class App extends Component {
               <li><Link to="#fasilitas" className="col-xs-2" onClick={this.onFasilitas} ><i className="ion-document-text"></i></Link></li>
               <li><Link to="#lokasi" className="col-xs-2" onClick={this.onLokasi} ><i className="ion-ios-location"></i></Link></li>
               <li><Link to="#biaya" className="col-xs-2" onClick={this.onBiaya} ><i className="ion-pricetags"></i></Link></li>              
-              <li><Link to="#kontak" className="col-xs-1" onClick={this.onKontak} ><i className="ion-iphone"></i></Link></li>              
+              <li><Link to="#kontak" className="col-xs-1" onClick={this.onKontak} ><i className="ion-iphone"></i></Link></li>
+              
             </Scrollspy>
 
          </div>
