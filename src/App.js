@@ -134,8 +134,7 @@ class App extends Component {
               <li><Link to="/#fasilitas" onClick={this.onFasilitas}><i className="ion-document-text"></i> Fasilitas</Link></li>
               <li><Link to="/#lokasi" onClick={this.onLokasi}><i className="ion-ios-location"></i> Lokasi</Link></li>
               <li><Link to="/#biaya" onClick={this.onBiaya}><i className="ion-pricetags"></i> Biaya</Link></li>
-              <li><Link to="/#kontak" onClick={this.onKontak}><i className="ion-iphone"></i> Kontak</Link></li>              
-              <li><Link to="/blog" onClick={this.onBlog} >Blog</Link></li>
+              <li><Link to="/#kontak" onClick={this.onKontak}><i className="ion-iphone"></i> Kontak</Link></li>                            
             </Scrollspy>
         </div>
       </nav>
@@ -163,8 +162,7 @@ class App extends Component {
               <li><Link to="#fasilitas" className="col-xs-2" onClick={this.onFasilitas} ><i className="ion-document-text"></i></Link></li>
               <li><Link to="#lokasi" className="col-xs-2" onClick={this.onLokasi} ><i className="ion-ios-location"></i></Link></li>
               <li><Link to="#biaya" className="col-xs-2" onClick={this.onBiaya} ><i className="ion-pricetags"></i></Link></li>              
-              <li><Link to="#kontak" className="col-xs-1" onClick={this.onKontak} ><i className="ion-iphone"></i></Link></li>
-              <li><Link to="/blog" className="col-xs-1" onClick={this.onBlog} ><i className="ion-iphone"></i></Link></li>
+              <li><Link to="#kontak" className="col-xs-1" onClick={this.onKontak} ><i className="ion-iphone"></i></Link></li>              
             </Scrollspy>
 
          </div>
