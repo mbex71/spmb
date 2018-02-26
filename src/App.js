@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import Scrollspy from 'react-scrollspy';
-import{BrowserRouter, Link, Route} from 'react-router-dom';
+import{BrowserRouter as Router, Link, Route} from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
 import Program from './components/Program';
@@ -113,7 +114,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <Router>
       <div className="App"> 
       
       <section id="home">       
@@ -176,16 +177,20 @@ class App extends Component {
       
       
       <Route exact path="/" component={Main} />
+      
       <Route path="/blog" component={Blog}/>
-     
+      
+      
 
       
       </div>
-      </BrowserRouter>
+      </Router>
       
     );
   }
 }
+
+
 
 
 export default App;

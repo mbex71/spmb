@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Link, Switch} from 'react-router-dom';
+
 
 
 export const Indexart = () => {
     
-    function handleClick(alamat){
-        window.open(alamat,"_self");
+    function handleClick() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
 
     return(
@@ -14,31 +16,31 @@ export const Indexart = () => {
     <br />
     <div className="row">
         <div className="col-md-3 artikellist">
-            <Link to="/blog/fakultas-dan-jurusan-di-ITS" onClick={handleClick.bind(this,"/blog/fakultas-dan-jurusan-di-ITS")}>
+            <Link to="/blog/fakultas-dan-jurusan-di-ITS" onClick={handleClick.bind()}>
             <img src="/assets/artikel/artikel1.jpg" className="img-responsive" alt="Jurusan ITS"/></Link>
         </div>
         <div className="col-md-3 artikellist">
-            <Link to="/blog/INILAH-ALASAN-KAMU-HARUS-MASUK-ITS-FASILITASNYA-OKE-BANGET" onClick={handleClick.bind(this,"/blog/INILAH-ALASAN-KAMU-HARUS-MASUK-ITS-FASILITASNYA-OKE-BANGET")}>
+            <Link to="/blog/INILAH-ALASAN-KAMU-HARUS-MASUK-ITS-FASILITASNYA-OKE-BANGET" onClick={handleClick.bind()}>
             <img src="/assets/artikel/artikel2.jpg" className="img-responsive" alt="Jurusan ITS" /></Link>
         </div>
         <div className="col-md-3 artikellist">
-            <Link to="/blog/BIAYA-KULIAH-DI-ITS-JALUR-SBMPTN-SNMPTN-DAN-PKM-MURAH-ATAU-MAHAL" onClick={handleClick.bind(this,"/blog/BIAYA-KULIAH-DI-ITS-JALUR-SBMPTN-SNMPTN-DAN-PKM-MURAH-ATAU-MAHAL")}>
+            <Link to="/blog/BIAYA-KULIAH-DI-ITS-JALUR-SBMPTN-SNMPTN-DAN-PKM-MURAH-ATAU-MAHAL" onClick={handleClick.bind()}>
             <img src="/assets/artikel/artikel3.jpg" className="img-responsive" alt="Jurusan ITS" /></Link>
         </div>
         <div className="col-md-3 artikellist">
-            <Link to="/blog/PROGRAM-STUDI-DAN-DAYA-TAMPUNG-SBMPTN-2018-DI-ITS" onClick={handleClick.bind(this,"/blog/PROGRAM-STUDI-DAN-DAYA-TAMPUNG-SBMPTN-2018-DI-ITS")}>
+            <Link to="/blog/PROGRAM-STUDI-DAN-DAYA-TAMPUNG-SBMPTN-2018-DI-ITS" onClick={handleClick.bind()}>
             <img src="/assets/artikel/artikel4.jpg" className="img-responsive" alt="Jurusan ITS" /></Link>
         </div>
         <div className="col-md-3 artikellist">
-            <Link to="/blog/PREDIKSI-PASSING-GRADE-SBMPTN-2018-ITS-SURABAYA" onClick={handleClick.bind(this,"/blog/PREDIKSI-PASSING-GRADE-SBMPTN-2018-ITS-SURABAYA")}>
+            <Link to="/blog/PREDIKSI-PASSING-GRADE-SBMPTN-2018-ITS-SURABAYA" onClick={handleClick.bind()}>
             <img src="/assets/artikel/artikel5.jpg" className="img-responsive" alt="Jurusan ITS" /></Link>
         </div>
         <div className="col-md-3 artikellist">
-            <Link to="/blog/INFORMASI-UMUM-SBMPTN-2018-CEK-DISINI" onClick={handleClick.bind(this,"/blog/INFORMASI-UMUM-SBMPTN-2018-CEK-DISINI")}>
+            <Link to="/blog/INFORMASI-UMUM-SBMPTN-2018-CEK-DISINI" onClick={handleClick.bind()}>
             <img src="/assets/artikel/artikel6.jpg" className="img-responsive" alt="Jurusan ITS" /></Link>
         </div>
         <div className="col-md-3 artikellist">
-            <Link to="/blog/MAU-LULUS-SBMPTN-INILAH-STARTEGI-BELAJARNYA" onClick={handleClick.bind(this,"/blog/MAU-LULUS-SBMPTN-INILAH-STARTEGI-BELAJARNYA")}>
+            <Link to="/blog/MAU-LULUS-SBMPTN-INILAH-STARTEGI-BELAJARNYA" onClick={handleClick.bind()}>
             <img src="/assets/artikel/artikel7.jpg" className="img-responsive"alt="Jurusan ITS" /></Link>
         </div>
     </div>
@@ -88,7 +90,8 @@ const myartikel = ({match}) => {
                 <Arttujuh></Arttujuh>
             );
             break
-        }
+        } 
+        
             
     }
     
@@ -934,6 +937,7 @@ const Arttujuh = () => (
 );
 
 
+
 class Blog extends Component{
     render(){
         return(
@@ -941,9 +945,12 @@ class Blog extends Component{
                 <div className="blog">
                     {/* <Indexart></Indexart> */}
 
+                    <Switch>
                     <Route exact path="/blog" component={Indexart} />                    
+                    
                     <Route path="/blog/:myartikel" component={myartikel}/>
-
+                    
+                    </Switch>
                 
                 </div>
             </BrowserRouter>
