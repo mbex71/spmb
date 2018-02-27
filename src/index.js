@@ -10,5 +10,5 @@ ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
 
-// console.log("Hallo");
+console.log("Hallo");
 

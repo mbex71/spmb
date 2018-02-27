@@ -166,8 +166,6 @@ const Gold = (props) => (
   )
 
 
-
-
 ReactDOM.render(<Program />, document.getElementById('root'));
 
 export default Program;

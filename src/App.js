@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import Scrollspy from 'react-scrollspy';
-import{BrowserRouter as Router, Link, Route} from 'react-router-dom';
+
+import{Link, Route, BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
 import Program from './components/Program';
@@ -135,7 +135,7 @@ class App extends Component {
               <li><Link to="/#fasilitas" onClick={this.onFasilitas}><i className="ion-document-text"></i> Fasilitas</Link></li>
               <li><Link to="/#lokasi" onClick={this.onLokasi}><i className="ion-ios-location"></i> Lokasi</Link></li>
               <li><Link to="/#biaya" onClick={this.onBiaya}><i className="ion-pricetags"></i> Biaya</Link></li>
-              <li><Link to="/#kontak" onClick={this.onKontak}><i className="ion-iphone"></i> Kontak</Link></li>                            
+              <li><Link to="/#kontak" onClick={this.onKontak}><i className="ion-iphone"></i> Kontak</Link></li>              
             </Scrollspy>
         </div>
       </nav>
