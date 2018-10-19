@@ -1,34 +1,43 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import Slider from 'react-slick';
+
 
 
 class Location extends Component{
     render(){
+
+        var settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          };
         return(
             <div className="location">
                 <div className="container-fluid">
                     <h3 align="center">Lokasi</h3>                    
                     <div className="row" style={{marginTop:"50px",marginBottom:"100px"}}>
-                        <div className="col-md-8 " align="center">                             
-                            <ul className="list-inline">
-                                <li><img src="/assets/lokasi/1.jpg" alt="" className="img-responsive"/></li>
-                                <li><img src="/assets/lokasi/2.jpeg" alt="" className="img-responsive"/></li>
-                                <li><img src="/assets/lokasi/3.jpg" alt="" className="img-responsive"/></li>
-                                <li><img src="/assets/lokasi/4.jpg" alt="" className="img-responsive"/></li>
-                                <li><img src="/assets/lokasi/5.jpg" alt="" className="img-responsive"/></li>
-                                <li><img src="/assets/lokasi/6.jpeg" alt="" className="img-responsive"/></li>
-                                <li><img src="/assets/lokasi/7.jpeg" alt="" className="img-responsive"/></li>
-                                <li><img src="/assets/lokasi/8.jpeg" alt="" className="img-responsive"/></li>
-                            </ul>
+                        <div className="col-md-8 " align="center" style={{paddingLeft:'50px',paddingRight:'50px'}}>  
+                        <Slider {...settings}>
+                        
+                                <div><img src="/assets/lokasi/kamar.jpg" alt="" className="img-responsive"/></div>
+                                <div><img src="/assets/lokasi/kamar 2.jpg" alt="" className="img-responsive"/></div>
+                                <div><img src="/assets/lokasi/kamar mandi.jpg" alt="" className="img-responsive"/></div>
+                                <div><img src="/assets/lokasi/lantai 1.jpg" alt="" className="img-responsive"/></div>
+                                <div><img src="/assets/lokasi/lantai 2.jpg" alt="" className="img-responsive"/></div> 
+                            
+                        </Slider>                           
+                        <br/><br/>
                         </div>
                         <div className="col-md-4">
 
                             <label htmlFor=""><h4>Tempat:</h4></label>
-                            <p>Anjani BNB Surabaya (Dekat dengan ITS)</p>
+                            <p>Dparagon Kalijudan Surabaya, Komplek wiguna indah blok e 88-89, Kalijudan, Mulyorejo, Surabaya</p>
                             <label htmlFor=""><h4>Waktu:</h4></label>
-                            <p>April-Mei 2018 (Menyesuaikan jadwal pemerintah untuk UN 2018)</p>
+                            <p>Setelah UN sd SBMPTN 2019 (tanggal fix menunggu jadwal dari pemerintah</p>
                             <label htmlFor=""><h4>Peserta:</h4></label>
-                            <p>Kelas 3 SMA atau sederajat dan alumni 2016 - 2017 yang mengikuti SBMPTN</p>
+                            <p>Kelas 3 SMA atau sederajat dan alumni 2017 - 2018 yang akan mengikuti SBMPTN</p>
                             <label htmlFor=""><h4>Fasilitas Kamar:</h4></label>                        
                             <ul className="list">                                    
                                 <li>  Tempat tidur springbed</li>
@@ -46,6 +55,6 @@ class Location extends Component{
     }
 }
 
-ReactDOM.render(<Location />, document.getElementById('root'));
+
 
 export default Location;

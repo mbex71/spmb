@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+
 
 
 class Joingroup extends Component{
@@ -11,15 +11,15 @@ class Joingroup extends Component{
 
     handleJoin(e){
         e.preventDefault();
-        window.open("http://bit.ly/juarasbmptn8","__blank");
+        window.open("http://bit.ly/ceritajuara","__blank");
     }
     render(){
         return(
             <div className="container-fluid join">
                 <div className="row">
                     <div className="col-md-4 col-md-offset-4" align="center">
-                    <h4>Yuk Gabung di Group SBMPTN 2018</h4>
-                    <h5>Gratis Soal & Pembahasan Materi SBMPTN 2018</h5>
+                    <h4>Yuk gabung di grup Pejuang SBMPTN 2019</h4>
+                    <h5>Gratis Tips dan Trik serta soal pembahasan SBMPTN</h5>
                     <br/>
                     <button onClick={this.handleJoin} className="btn btn-danger btn-lg">Join Group Kita Yuk!!</button>
                     </div>
@@ -29,6 +29,6 @@ class Joingroup extends Component{
     }
 }
 
-ReactDOM.render('<Joingroup />',document.getElementById('root'));
+
 
 export default Joingroup

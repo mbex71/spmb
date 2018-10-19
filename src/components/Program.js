@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+
+
+
 
 class Program extends Component{
   constructor(props){
@@ -8,7 +10,8 @@ class Program extends Component{
     this.state = {
       privateState: true,
       gold: false,
-      reguler: false
+      reguler: false,
+      exclusive: false
 
       
     }
@@ -16,6 +19,7 @@ class Program extends Component{
     this.regulerHandle = this.regulerHandle.bind(this);
     this.privateHandle = this.privateHandle.bind(this);
     this.goldHandle = this.goldHandle.bind(this);
+    this.exclusiveHandle = this.exclusiveHandle.bind(this);
   }
 
   privateHandle(e){
@@ -23,7 +27,8 @@ class Program extends Component{
     this.setState({
       privateState:true,
       gold:false,
-      reguler:false
+      reguler:false,
+      exclusive: false
 
     });
   }
@@ -33,7 +38,8 @@ class Program extends Component{
     this.setState({
       gold:true,
       privateState:false,
-      reguler:false
+      reguler:false,
+      exclusive: false
     });
   }
 
@@ -42,7 +48,18 @@ class Program extends Component{
     this.setState({
       gold:false,
       privateState:false,
-      reguler:true
+      reguler:true,
+      exclusive: false
+    });
+  }
+
+  exclusiveHandle(e){    
+    e.preventDefault();
+    this.setState({
+      gold:false,
+      privateState:false,
+      reguler:false,
+      exclusive: true
     });
   }
 
@@ -50,28 +67,43 @@ class Program extends Component{
         return(
                        
             <div className="program">
-            <div className="container-fluid">
+            <div className="container-fluid" style={{borderTop: '2px solid rgba(186,186,186, 0.5)',borderBottom: '2px solid rgba(186,186,186, 0.5)'}}>
+              <br />
               <h3 align="center">Program Kami Lainnya</h3>
               <br/><br/>
               <div className="container">
                 <div className="row" align="center">
-                  <div className="col-xs-4">
-                    <a href="/" onClick={this.privateHandle} className="btn-program btn-xs">
-                    <h1><i className="ion-university"></i></h1>
-                    <label htmlFor="">Private SBMPTN</label>
+                  <div className="col-xs-3">
+                    <div>
+                      <a href="/" onClick={this.privateHandle} className="btn-program btn-lg">
+                      <h1><i class="fas fa-university"></i></h1>
+                      <label htmlFor="">PRIVATE CLASS</label>
                     </a>
+                    </div>
                   </div>
-                  <div className="col-xs-4">
-                    <a href="/" onClick={this.goldHandle} className="btn-program btn-xs">
-                    <h1><i className="ion-ios-bookmarks-outline"></i></h1>
-                    <label htmlFor="">GOLD SBMPTN</label>
+                  <div className="col-xs-3">
+                    <div>
+                      <a href="/" onClick={this.goldHandle} className="btn-program btn-lg">
+                      <h1><i class="fas fa-book-open"></i></h1>
+                      <label htmlFor="">GOLD CAMP</label>
                     </a>
+                    </div>
                   </div>
-                  <div className="col-xs-4">
-                    <a href="/" onClick={this.regulerHandle} className="btn-program btn-xs">
-                    <h1><i className="ion-paper-airplane"></i></h1>
-                    <label htmlFor="">REGULER SBMPTN</label>
+                  <div className="col-xs-3">
+                    <div>
+                      <a href="/" onClick={this.regulerHandle} className="btn-program btn-lg">
+                      <h1><i class="fas fa-paper-plane"></i></h1>
+                      <label htmlFor="">INTENSIF CLASS</label>
                     </a>
+                    </div>
+                  </div>
+                  <div className="col-xs-3">
+                    <div>
+                      <a href="/" onClick={this.exclusiveHandle} className="btn-program btn-lg">
+                      <h1><i class="fas fa-scroll"></i></h1>
+                      <label htmlFor="">EXCLUSIVE CLASS</label>
+                    </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -81,6 +113,7 @@ class Program extends Component{
               {this.state.privateState ? <Private /> : null}
               {this.state.gold ? <Gold /> : null}
               {this.state.reguler ? <Reguler /> : null}
+              {this.state.exclusive ? <Exclusive /> : null}
               
           
             </div>
@@ -95,15 +128,14 @@ class Program extends Component{
 const Private = () => (    
     <div className="container" align="center" style={{marginBottom:"100px",marginTop:"50px"}}>  
 
-          <h4><label htmlFor="private">Private Seleksi Bersama Masuk Perguruan Tinggi Negeri</label></h4> 
-          <i>"Bagi yang ingin belajar persiapan SBMPTN di rumah"</i>
+          <h4><label htmlFor="private">Private Class</label></h4> 
+          
         
           <ul className="nav">
-            <li><h4><label htmlFor="harga">Rp 1.200.000</label></h4></li>
-            <li>1 Kelas (1-2 Orang)</li>
-            <li>1 Minggu 2x Pertemuan</li>
+            <li><h4><label htmlFor="harga">Rp 2.000.000</label></h4></li>
+            <li>1 Kelompok Belajar 1-2 Siswa</li>            
             <li>8x Pertemuan</li>
-            <li>Waktu menyesuaikan jadwal peserta dan tutor</li>
+            <li>Waktu belajar menyesuaikan jadwal siswa dan tentor, Tentor bisa datang ke rumah</li>
           </ul>
         </div>
 
@@ -112,14 +144,13 @@ const Private = () => (
   
 const Gold = (props) => (
     <div className="container" align="center" style={{marginBottom:"100px",marginTop:"50px"}} hidden={props.status}>      
-        <h4><label htmlFor="umfk">GOLD SBMPTN</label></h4> 
+        <h4><label htmlFor="umfk">GOLD Camp</label></h4> 
             <i>"Mengikuti program dan kelas yang sama dengan program Juara SBMPTN Camp, namun tidak menginap. Sehingga tidak mendapatkan fasilitas penginapan, makan, laundry, antar jemput saat tes serta tidak mendapatkan garansi uang kembali jika tidak lolos SBMPTN atau Ujian Mandiri ITS 2018."</i>
             <ul className="nav">
-                <li><h4><label htmlFor="harga">Rp 10.389.000</label></h4></li>
-                <li>Daftar selama Februari cukup bayar Rp 9.389.000*</li>
-                <li>Daftar 4 Gratis 1*</li>
-                <li>Diskon Rp 300.000 untuk ranking 10 besar di kelas* 
-                    (promo pilih salah satu)
+                <li><h4><label htmlFor="harga">Rp 10.500.000</label></h4></li>
+                <li>Diskon Rp 1.500.000 untuk 5 pendaftar pertama</li>
+                <li>Start Belajar setelah UN sd H-1 SBMPTN 2019. Belajar setiap Hari mulai jam 08.00-21.00 WIB, 5x Meeting/hari</li>
+                <li>Fasilitas Belajar sama dengan Camp SBMPTN minus penginapan, makan, dan tidak ada Cash Back jika gagal masuk PTN.
                 </li>
                 
             </ul>
@@ -130,14 +161,15 @@ const Gold = (props) => (
 
   const Reguler = (props) => (
     <div className="container" align="center" style={{marginBottom:"100px",marginTop:"50px"}} hidden={props.status}>      
-        <h4><label htmlFor="umfk">REGULER SBMPTN</label></h4> 
+        <h4><label htmlFor="umfk">Intensif Class</label></h4> 
         <ul className="nav">
-                <li><h4><label htmlFor="harga">Rp.1.989.000</label></h4></li>
-                <li>DISKON Rp 200.000 untuk pendaftaran selama Februari*</li>
-                <li>Daftar 3 GRATIS 1*</li>
+                <li><h4><label htmlFor="harga">Rp 2.000.000</label></h4></li>
+                <li>Daftar 4 GRATIS 1*</li>
                 <li>Diskon Rp 150.000 untuk ranking 5 besar di kelas* 
-                    (promo pilih salah satu)
+                    
                 </li>                
+                <li>DISKON Rp 200.000 untuk pendaftaran sd Februari 2019</li>
+                <li>(Promo Pilih Salah Satu)</li>
             </ul>
             <br />
           <div className="row">
@@ -153,9 +185,9 @@ const Gold = (props) => (
             <div className="col-md-6">
               <label>Fasilitas</label>
               <ul className="nav">
-                <li>Tentor BERKUALITAS dari ITS,Unair,Unesa</li>
-                <li>Kelas AC di kantor Sang Juara School</li>
-                <li>1 kelas 10-12 siswa</li>
+                <li>Kelas AC</li>
+                <li>Tentor Berpengalaman, 12-15 siswa/kelas</li>
+                <li>Start setelah UN sd H-1 SBMPTN, Belajar setiap hari 2x Meeting @90 Menit.</li>
               </ul>
             </div>
           </div> 
@@ -165,7 +197,24 @@ const Gold = (props) => (
 
   )
 
+  const Exclusive = (props) => (
+    <div className="container" align="center" style={{marginBottom:"100px",marginTop:"50px"}} hidden={props.status}>      
+        <h4><label htmlFor="umfk">Exclusive Class</label></h4> 
+            
+            <ul className="nav">
+                <li><h4><label htmlFor="harga">Rp 4.800.000</label></h4></li>
+                <li>Eksklusif 8-10 siswa/kelas</li>
+                <li>Belajar 2 sesi/Minggu</li>
+                <li>1 Sesi 180 Menit, Start Belajar Januari 2019
+                </li>
+                
+            </ul>
+        
+    </div>
 
-ReactDOM.render(<Program />, document.getElementById('root'));
+  )
+
+
+
 
 export default Program;

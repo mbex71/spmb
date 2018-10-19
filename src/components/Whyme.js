@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+
 
 class Whyme extends Component{
     render(){
@@ -12,34 +12,34 @@ class Whyme extends Component{
                     </div>
                     <div className="row listkegiatan">
                         <div className="col-md-4 keg">          
-                        <i className="ion-ios-cog-outline fas-logo"></i>
-                        <h4> <label htmlFor="">LOKASI DEKAT ITS</label></h4>          
-                        <p>Rasakan denyut nadi kehidupan di kampus ITS sebelum kamu menjadi mahasiswa ITS.</p>
+                        <i class="fas fa-map-marked fas-logo"></i>
+                        <h4> <label htmlFor="">LOKASI DEKAT ITS & UNAIR</label></h4>          
+                        <p>Rasakan denyut nadi kehidupan di kampus ITS & Unair sebelum kamu diterima menjadi mahasiswa</p>
                         </div>
                         <div className="col-md-4 keg">
-                        <i className="ion-ios-paper-outline fas-logo"></i>
-                        <h4><label htmlFor="">DIAJAR OLEH DOSEN/ALUMNI S1/S2 ITS</label></h4>          
-                        <p>Kami memberikan kualitas pengajaran yang baik, kamu akan dibimbing langsung oleh para dosen ITS.</p>
+                        <i class="fas fa-chalkboard-teacher fas-logo"></i>
+                        <h4><label htmlFor="">DIAJAR OLEH DOSEN/ALUMNI S1/S2 ITS & UNAIR</label></h4>          
+                        <p>Kami memberikan kualitas pengajaran yang baik, kamu akan dibimbing langsung oleh para dosen muda dan alumni  ITS/Unair</p>
+                        </div>                        
+                        <div className="col-md-4 keg">
+                        <i class="fas fa-user-shield fas-logo"></i>
+                        <h4><label htmlFor="">GARANSI MASUK PTN</label></h4>          
+                        <p>Jika tidak lulus SBMPTN dan Ujian Mandiri Universitas 2019, kamu akan mendapatkan cashback</p>
                         </div>
                         <div className="col-md-4 keg">
-                        <i className="ion-android-star-outline fas-logo"></i>
-                        <h4><label htmlFor="">BIMBINGAN SPIRITUAL</label></h4>          
-                        <p>Perjuangan tentu tak lepas dari takdir sang kuasa, kami akan memberikan bimbingan kepada siswa muslim berupa shalat jamaah tepat waktu, shalat dhuha, tahajud dan mengaji.</p>
-                        </div>
-                        <div className="col-md-4 keg">
-                        <i className="ion-search fas-logo"></i>
-                        <h4><label htmlFor="">GARANSI UANG KEMBALI</label></h4>          
-                        <p>Jika tidak lulus Sbmptn atau Ujian Mandiri ITS 2018 kamu akan mendapatkan cashback.</p>
-                        </div>
-                        <div className="col-md-4 keg">
-                        <i className="ion-ios-home fas-logo"></i>
+                        <i class="fas fa-money-bill-wave-alt fas-logo"></i>
                         <h4><label htmlFor="">KEUNTUNGAN TAMBAHAN</label></h4>          
-                        <p>Dapatkan Rp. 500.000,00 dengan mengajak teman mengikuti juara SBMPTN Camp</p>
+                        <p>Dapatkan Cashback Rp. 500.000,00/siswa  dengan mengajak teman mengikuti juara SBMPTN Camp</p>
                         </div>
                         <div className="col-md-4 keg">
-                        <i className="ion-android-happy fas-logo"></i>
-                        <h4><label htmlFor="">TERBATAS</label></h4>          
-                        <p>Hanya untuk 21 orang saja</p>
+                        <i class="fas fa-users fas-logo"></i>
+                        <h4><label htmlFor="">KUOTA TERBATAS</label></h4>          
+                        <p>Agar suasana belajar lebih Fokus dan Eksklusif, kami hanya menerima 40 siswa untuk angkatan 2019</p>
+                        </div>
+                        <div className="col-md-4 keg">
+                        <i class="fas fa-user-graduate fas-logo"></i>
+                        <h4><label htmlFor="">BERPENGALAMAN MELULUSKAN</label></h4>          
+                        <p>Tahun 2018, 90 % siswa Camp diterima di PTN</p>
                         </div>
                     </div>
                     
@@ -49,6 +49,6 @@ class Whyme extends Component{
     }
 }
 
-ReactDOM.render(<Whyme />, document.getElementById('root'));
+
 
 export default Whyme;

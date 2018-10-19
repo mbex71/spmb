@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 
 
@@ -11,60 +11,60 @@ class Alumni extends Component{
         <br/>
         <div className="row" align="center">
             <div className="col-md-2 col-md-offset-1 col-alumni">
-                <img src="/assets/alumni/Panji.PNG" alt="" className="img-responsive img-alumni"/>
-                <h5>Panji Aditya Ramadhani D.</h5>
-                <p>SMAN 5 Balikpapan - Teknik Lingkungan ITS</p>
+                <img src="/assets/alumninew/Adji Dina Kartika - SMAN 1 Samarinda - Gizi Kesehatan Universitas Gajah Mada.jpg" alt="" className="img-responsive img-alumni"/>
+                <h5>Adji Dina Kartika</h5>
+                <p>SMAN 1 Samarinda - Gizi Kesehatan Universitas Gajah Mada</p>
             </div>
             <div className="col-md-2 col-alumni">
-                <img src="/assets/alumni/Haikal.PNG" alt="" className="img-responsive img-alumni"/>
-                <h5>M. Haikal Bahresy</h5>
-                <p>SMAN 1 Manyar Gresik - Teknik Fisika ITS</p>
+                <img src="/assets/alumninew/Alek Nurfadillah - SMAN 26 Bandung -Agroekoteknologi Universitas Brawijaya.jpg" alt="" className="img-responsive img-alumni"/>
+                <h5>Alek Nurfadillah</h5>
+                <p>SMAN 26 Bandung - Agroekoteknologi Universitas Brawijaya</p>
             </div>
             <div className="col-md-2 col-alumni">
-                <img src="/assets/alumni/Ricky.PNG" alt="" className="img-responsive img-alumni"/>
-                <h5>Ricky Dana Setiawawan</h5>
-                <p>SMAN 17 Surabaya - Kimia MIPA ITS</p>
+                <img src="/assets/alumninew/Amalia Andini Harahap - SMA Dwiwarna Bogor - Teknik Kelautan ITS.jpg" alt="" className="img-responsive img-alumni"/>
+                <h5>Amalia Andini Harahap</h5>
+                <p>SMA Dwiwarna Bogor - Teknik Kelautan ITS</p>
             </div>
             <div className="col-md-2 col-alumni">
-                <img src="/assets/alumni/ADHEK.jpg" alt="" className="img-responsive img-alumni"/>
-                <h5>Adhek Kurnia Pratama</h5>
-                <p>SMAN 4 Tuban - Teknik Kimia ITS</p>
+                <img src="/assets/alumninew/Aqly Fathanah Botutihe -SMAN 1 Luwuk Sulawesi Tenggara - Teknik Geomatika ITS.jpg" alt="" className="img-responsive img-alumni"/>
+                <h5>Aqly Fathanah Botutihe</h5>
+                <p>SMAN 1 Luwuk Sulawesi Tenggara - Teknik Geomatika ITS</p>
             </div>
             <div className="col-md-2 col-alumni">
-                <img src="/assets/alumni/Akbar.PNG" alt="" className="img-responsive img-alumni"/>
-                <h5>Akbar Swandana</h5>
-                <p>SMAN 1 Singosari Malang - Teknik Instrumental ITS</p>
+                <img src="/assets/alumninew/Aristatira Mahardika Wardani - SMAN 1 Kebomas Gresik - Perikanan Universitas Airlangga.jpg" alt="" className="img-responsive img-alumni"/>
+                <h5>Aristatira Mahardika Wardani</h5>
+                <p>SMAN 1 Kebomas Gresik - Perikanan Universitas Airlangga</p>
             </div>
         </div>
         <div className="row" align="center">
         <div className="col-md-2 col-md-offset-1 col-alumni">
-                <img src="/assets/alumni/Kiki.jpeg" alt="" className="img-responsive img-alumni"/>
-                <h5>Kiki Yuniar Kristiawan</h5>
-                <p>SMA 1 Wachid Hasyim Surabaya -  T.Informatika UPN jatim</p>
+                <img src="/assets/alumninew/Auldrien petra Laturiuw - SMA YPPK Agustinus Sorong Papua -T.Kimia ITS.jpg" alt="" className="img-responsive img-alumni"/>
+                <h5>Auldrien Petra Laturiuw</h5>
+                <p>SMA YPPK Agustinus Sorong Papua -  T.Kimia ITS</p>
             </div>
 
             <div className="col-md-2 col-alumni">
-                <img src="/assets/alumni/Dina.jpg" alt="" className="img-responsive img-alumni"/>
-                <h5>Adji Dina Kartika</h5>
-                <p>SMAN 1 Samarinda - Gizi Kesehatan UGM</p>
+                <img src="/assets/alumninew/Dianda Muh Hilmi - SMA Islam Al Azhar 14 Semarang - T.Industri Universitas Diponegoro.jpg" alt="" className="img-responsive img-alumni"/>
+                <h5>Dianda Muh Hilmi</h5>
+                <p>SMA Islam Al Azhar 14 Semarang - T.Industri Universitas Diponegoro</p>
             </div>
 
             <div className="col-md-2 col-alumni">
-                <img src="/assets/alumni/10.PNG" alt="" className="img-responsive img-alumni"/>
-                <h5>Nisrina Auliyah Laras Karindra</h5>
-                <p>SMAN 20 Surabaya - Kesehatan Masyarakat Unair</p>
+                <img src="/assets/alumninew/Eka Nida'ul Khasanah - MAN Insan Cendekia Pekalongan -Psikologi unair.jpg" alt="" className="img-responsive img-alumni"/>
+                <h5>Eka Nida'ul Khasanah</h5>
+                <p>MAN Insan Cendekia Pekalongan - Psikologi unair</p>
             </div>
 
             <div className="col-md-2 col-alumni">
-                <img src="/assets/alumni/Ayu.jpg" alt="" className="img-responsive img-alumni"/>
-                <h5>Ayu Wulandari</h5>
-                <p>SMA wachid Hasyim - Agroteknologi UPN jatim</p>
+                <img src="/assets/alumninew/M Rangga Dwi Agustian - SMAN 14 Surabaya - T. Elektro ITS.jpg" alt="" className="img-responsive img-alumni"/>
+                <h5>M Rangga Dwi Agustian</h5>
+                <p>SMAN 14 Surabaya - T. Elektro ITS</p>
             </div>
 
             <div className="col-md-2 col-alumni">
-                <img src="/assets/alumni/1.PNG" alt="" className="img-responsive img-alumni"/>
-                <h5>Muh. Fakhri Musyaffa Budiman</h5>
-                <p>SMA N 3 Pekalongan - T. Industri UIN Suka Yogyakarta</p>
+                <img src="/assets/alumninew/Widyan Pramudya - SMAN 2 Tambun Selatan  Bekasi - Geografi Universitas Indonesia.jpg" alt="" className="img-responsive img-alumni"/>
+                <h5>Widyan Pramudya</h5>
+                <p>SMAN 2 Tambun - Geografi Universitas Indonesia</p>
             </div>
         </div>
     </div>
@@ -72,6 +72,6 @@ class Alumni extends Component{
     }
 }
 
-ReactDOM.render(<Alumni />, document.getElementById('root'));
+// ReactDOM.render(<Alumni />, document.getElementById('root'));
 
 export default Alumni

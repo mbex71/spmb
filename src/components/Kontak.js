@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+
 
 class Kontak extends Component{
     render(){
@@ -10,6 +10,7 @@ class Kontak extends Component{
                 <h3>Kontak</h3>
                 <br/><br/>
                 <div className="row">
+
                     <div className="col-md-3">
                         <div className="panel panel-info panel-lokasi">
                             <div className="panel-heading">
@@ -28,7 +29,7 @@ class Kontak extends Component{
                                 <h4>Lokasi Camp</h4>
                             </div>
                             <div className="panel-body">
-                                <label>Jl. Wisma Permai Barat I Blok LL No.29 Mulyorejo Surabaya</label>
+                                <label>Komplek wiguna indah blok e 88-89, Kalijudan, Mulyorejo, Surabaya</label>
                             </div>
                         </div>
                     </div>
@@ -58,12 +59,35 @@ class Kontak extends Component{
                     </div>
                 </div>
                 
+                <div className="row">
+                    <div className="col-md-3">
+                        <div className="panel panel-info panel-lokasi">
+                            <div className="panel-heading">
+                                <h4><i className="ion-email"></i></h4>
+                                <h4>Social Media</h4>
+                            </div>
+                            <div className="panel-body">
+                                <ul className="list-inline">
+                                    <li style={{marginRight:25,marginLeft:25}}><a style={{fontSize:30}} href="https://www.facebook.com/lbb.sangjuaraschool.its/" target="__blank"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li style={{marginRight:25,marginLeft:25}}><a style={{fontSize:30}} href="https://www.instagram.com/sangjuaraschool/" target="__blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li style={{marginRight:25,marginLeft:25}}><a style={{fontSize:30,color:'red'}} href="https://www.youtube.com/channel/UCl5Z_AUUzkURxH7dzzotdjA/featured" target="__blank"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
             </div>
             </div>
         );
     }
 }
 
-ReactDOM.render(<Kontak />, document.getElementById('root'));
+
 
 export default Kontak;

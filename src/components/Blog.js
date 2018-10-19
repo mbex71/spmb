@@ -44,6 +44,7 @@ export const Indexart = () => {
             <img src="/assets/artikel/artikel7.jpg" className="img-responsive"alt="Jurusan ITS" /></Link>
         </div>
     </div>
+    
     </div>
 )};
 

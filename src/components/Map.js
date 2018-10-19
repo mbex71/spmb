@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+
 
 import {
     GoogleMap,
@@ -55,6 +55,6 @@ class Map extends Component{
 
 }
 
-ReactDOM.render(<Map />, document.getElementById('root'));
+
 
 export default Map 

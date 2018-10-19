@@ -15,7 +15,8 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
-    "react-scrollspy": "^3.3.5"
+    "react-scrollspy": "^3.3.5",
+    "react-slick": "^0.23.1"
   },
   "scripts": {
     "start": "react-scripts start",
