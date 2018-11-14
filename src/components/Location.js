@@ -35,7 +35,7 @@ class Location extends Component{
                             <label htmlFor=""><h4>Tempat:</h4></label>
                             <p>Dparagon Kalijudan Surabaya, Komplek wiguna indah blok e 88-89, Kalijudan, Mulyorejo, Surabaya</p>
                             <label htmlFor=""><h4>Waktu:</h4></label>
-                            <p>Setelah UN sd SBMPTN 2019 (tanggal fix menunggu jadwal dari pemerintah</p>
+                            <p>Setelah UN sd Test Centre (kami sarankan bagi siswa yang ikut program untuk memilih jadwal test centre pada bulan Mei)</p>
                             <label htmlFor=""><h4>Peserta:</h4></label>
                             <p>Kelas 3 SMA atau sederajat dan alumni 2017 - 2018 yang akan mengikuti SBMPTN</p>
                             <label htmlFor=""><h4>Fasilitas Kamar:</h4></label>                        

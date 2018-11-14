@@ -74,7 +74,10 @@ class App extends Component {
   }
 
   onClickHandler(){
-    window.open("https://api.whatsapp.com/send?phone=6285648569506","_blank")
+    // window.open("https://api.whatsapp.com/send?phone=6281335087677","_blank")
+    window.open("https://wa.me/6281335087677?text=Halo%20Juarasbmptn.com,saya%20tertarik%20mengikuti%20Program%20Juara%20SBMPTN.%20Mohon%20info%20lebih%20lanjut","_blank")
+    // window.open("https://wa.me/6281335087677","_blank")
+    
   }
 
   onTop(e){

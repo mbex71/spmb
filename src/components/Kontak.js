@@ -29,7 +29,8 @@ class Kontak extends Component{
                                 <h4>Lokasi Camp</h4>
                             </div>
                             <div className="panel-body">
-                                <label>Komplek wiguna indah blok e 88-89, Kalijudan, Mulyorejo, Surabaya</label>
+                                
+                                <label>Dparagon Kalijudan Surabaya, Komplek wiguna indah blok e 88-89, Kalijudan, Mulyorejo, Surabaya</label>
                             </div>
                         </div>
                     </div>

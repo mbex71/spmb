@@ -173,16 +173,8 @@ const Gold = (props) => (
             </ul>
             <br />
           <div className="row">
-            <div className="col-md-6">
-              <label>Belajar SBMPTN Intensif</label>
-              <ul className="nav">
-                <li>Waktu 16 April - 5 Mei 2018 (senin-sabtu)</li>
-                <li>1 hari 2 sesi @1.5 jam</li>
-                <li>Try Out setiap akhir pekan</li>
-                <li>Khusus Peserta SBMPTN Saintek</li>
-              </ul>
-            </div>
-            <div className="col-md-6">
+            
+            <div className="col-md-12">
               <label>Fasilitas</label>
               <ul className="nav">
                 <li>Kelas AC</li>
@@ -199,14 +191,16 @@ const Gold = (props) => (
 
   const Exclusive = (props) => (
     <div className="container" align="center" style={{marginBottom:"100px",marginTop:"50px"}} hidden={props.status}>      
-        <h4><label htmlFor="umfk">Exclusive Class</label></h4> 
+        <h4><label htmlFor="umfk">Exclusive Class (Kelas Bimbingan SBMPTN untuk Alumni)</label></h4> 
             
             <ul className="nav">
-                <li><h4><label htmlFor="harga">Rp 4.800.000</label></h4></li>
-                <li>Eksklusif 8-10 siswa/kelas</li>
-                <li>Belajar 2 sesi/Minggu</li>
-                <li>1 Sesi 180 Menit, Start Belajar Januari 2019
-                </li>
+                <li><h4><label htmlFor="harga">Rp 9.000.000</label></h4></li>
+                <li>12-14 siswa/kelas</li>
+                <li>3x Meeting/hari</li>
+                <li>Belajar Senin - Jum'at</li>
+                <li>Start Januari sd SBMPTN 2019</li>
+                <li>*Dibantu untuk mencarikan kos bagi siswa jauh</li>
+                <li>*Diskon sd 1.5 juta untuk pendaftaran Oktober-Desember 2018</li>
                 
             </ul>
         

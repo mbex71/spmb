@@ -8,6 +8,8 @@ class Alumni extends Component{
         return(
             <div className="container">
         <h3 align="center">Kami Telah diterima di ITS dan PTN lainnya, sekarang Giliranmu</h3>
+        <br/><br/>
+        <h5 align="center">Beberapa Alumni Juara SBMPTN Camp</h5>
         <br/>
         <div className="row" align="center">
             <div className="col-md-2 col-md-offset-1 col-alumni">
